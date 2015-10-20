@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IFinder</title>
+    <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version."/>
+
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="dist/css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+    <link href="docs/assets/css/demo.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="dist/js/vendor/html5shiv.js"></script>
+      <script src="dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container" style="/*width: 100%*/">
+      <div class="demo-headline">
+        <h1 class="demo-logo">
+          I <span class="fui-location"></span> Finder 
+          <small>we are ready to serve you</small>
+        </h1>
+      </div> <!-- /demo-headline -->
+
+      <!--<h1 class="demo-section-title">Basic elements</h1>-->
+      
+      
+      <div class="row">
+           
+              <div id="content" class="col-xs-8"></div>
+
+         
+      <div class="col-xs-4">
+                <h3 class="demo-panel-title"></h3>
+	          <blockquote>
+	            <p>Buy less. Choose well. Make it last.</p>
+	            <small>Vivienne Westwood</small>
+	          </blockquote>
+      </div>
+      </div>
+      
+      
+      
+
+
+
+
+
+    </div> <!-- /container -->
+
+    <div class="row" style="height: 75px;"></div>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <p>Made with love from Tangerang, Indonesia</p>
+                <p>Copyright &copy; 2015 Hutomo Sugianto</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+     <div id="hide" class="col-xs-8" style="display:none">
+      <h3 class="demo-panel-title">Find Our Nearest Agent</h3>
+      <div class="form-group">
+            <input type="text" value="" placeholder="Please enter your area" class="form-control" />
+            <div class="col-md-6">
+            
+            <div class="">
+            <ul class="">
+              <li><a href="#">Jakarta Selatan</a></li>
+              <li><a href="#">Jakarta Barat</a></li>
+              <li><a href="#">Tangerang Selatan</a></li>
+              </ul>
+            </div> 
+            </div>
+            
+            <div class="col-md-6">
+                <p>Results for Area: Jakarta Selatan</p>
+                <ul>
+                    <li>Hutomo Sugianto / 0819 555 3708</li>
+                    <li>Hutomo Sugianto / 0819 555 3708</li>
+                </ul>
+            </div>
+            
+          </div>
+           </div>
+    
+    <script src="dist/js/vendor/jquery.min.js"></script>
+    <script src="dist/js/vendor/video.js"></script>
+    <script src="dist/js/flat-ui.min.js"></script>
+    <script src="docs/assets/js/application.js"></script>
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <script type="text/jsx" src="js/ifinder.js"></script>
+    
+    
+    <script type="text/jsx">
+       React.render(
+        <FilterableAreaTable source="http://workspaces/superstack/ifinder/?f=area/arealist" />,
+        document.getElementById('content')
+      );
+    </script>
+    
+    <script>
+      videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
+    </script>
+ 
+  </body>
+</html>
